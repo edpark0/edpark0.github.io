@@ -1,0 +1,67 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+  background: #0e2a54;
+}
+
+.search-panel {
+  background: white;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.search-panel button {
+  background: white;
+  border: 0;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.search-bar {
+  width: 0px;  
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+/*This is to enure the text will not be shown*/
+.search-text {
+  height: 1px;
+  width: 1px;  
+  padding: 0;
+	margin: -1px;
+	border: 0;
+	position: absolute;
+  -webkit-clip: rect(0 0 0 0);
+  -ms-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.show-search {
+  width: 150px;
+  padding: 0.5rem;
+}

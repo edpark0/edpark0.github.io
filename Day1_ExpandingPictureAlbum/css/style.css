@@ -1,0 +1,71 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+}
+
+.expanding-album {
+  display: flex;
+  width: 85%;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.pic-slide {
+  position: relative;
+  display: block;
+  width: 8%;
+  height: 85vh;
+  margin: 7.5vh 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.pic-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+figcaption {
+  text-align: center;
+  opacity: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 3px 3px 1px black;
+}
+
+.selected {
+  flex-grow: 1;
+}
+
+.selected figcaption {
+  opacity: 1;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  -webkit-translate: -50%;
+  -ms-translate: -50%;
+  translate: -50%; 
+  -webkit-transition: opacity 0.2s linear 0.15s;
+  -ms-transition: opacity 0.2s linear 0.15s;
+  transition: opacity 0.2s linear 0.15s;
+}

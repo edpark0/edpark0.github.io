@@ -1,0 +1,102 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+}
+
+.progress-panel {
+  position: relative;
+  margin: 50vh auto;
+  width: 200px;
+}
+
+.progress-switch {
+  display: flex;
+  justify-content: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button {
+  background: #a377db;
+  border-radius: 7px;
+  border: 0;
+  margin: 15px 5px;
+  width: 80px;
+  height: 1.75rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #e0e0e0;
+}
+
+ol {
+  display:flex;
+  justify-content: space-between;
+}
+
+li {
+  background: white;
+  position: relative;
+  border-radius: 100%;
+  border: 3px solid #d2d2d2;
+  padding: .25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  text-align: center;
+  -webkit-transition: border-color .15s ease-in;
+  -ms-transition: border-color .15s ease-in;
+  transition: border-color .15s ease-in;
+}
+
+/*no-progress status*/
+li:after {
+  content: "";
+  width: 40px;
+  border-bottom: 3px solid #d2d2d2;
+  position: absolute;
+  top: 45%;
+  left: -40px;
+  z-index: -2;
+}
+
+/*Progress status*/
+li:before {
+  content: "";
+  width: 0;
+  border-bottom: 3px solid #a377db;
+  position: absolute;
+  top: 45%;
+  left: -40px;
+  z-index: -1;
+  -webkit-transition: width .2s ease-in;
+  -ms-transition: width .2s ease-in;
+  transition: width .2s ease-in;
+}
+
+li:first-child:before,
+li:first-child:after {
+  border-bottom: 0;
+}
+
+.complete {
+  border-color: #a377db;
+}
+
+.complete:nth-child(n):before {
+  width: 40px;
+}
