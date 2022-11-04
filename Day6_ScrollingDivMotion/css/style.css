@@ -1,0 +1,81 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+  background: #2a2f38;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.scroll-collection {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 2rem;
+  color: #FEFEFE;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 175px;
+  margin: 10px;
+  border-radius: 15px;
+  background: #0078b9;
+  overflow: hidden;
+  -webkit-transition: all 0.35s ease-in;
+  -ms-transition: all 0.35s ease-in;
+  transition: all .35s ease-in;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+.container span {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container:nth-of-type(odd) {
+  left: -100%;
+}
+
+.container:nth-of-type(even) {
+  left: 100%;
+}
+
+.slide-motion:nth-of-type(even),
+.slide-motion:nth-of-type(odd)
+ {
+  left: 0;
+  box-shadow: 5px 5px 5px black;
+}
