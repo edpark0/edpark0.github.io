@@ -1,0 +1,81 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+}
+
+.landing {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h2 {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 30px;
+}
+
+a {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  border: 3px solid white;
+  padding: 1rem 3rem;
+}
+
+a:hover {
+  background: #4D1EE6;
+  border-color: #4D1EE6;
+}
+
+.landing-page {
+  flex: 1 1 0;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 
+Picture Sources
+cake.jpg
+David Holifield
+https://unsplash.com/@davidholifield
+
+pie.jpg
+Levi Guzman
+https://unsplash.com/@homeschool */
+.left {
+  background-image: radial-gradient(rgba(32,32,36,.5), rgba(32,32,36,.3)), url('../assets/img/cake.jpg');
+}
+
+.right {
+  background-image: radial-gradient(rgba(32,32,36,.5), rgba(32,32,36,.3)), url('../assets/img/pie.jpg');
+}
+
+.left:hover,
+.right:hover {
+  flex-grow: 3;
+  transition: all 1s;
+}
