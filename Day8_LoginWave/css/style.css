@@ -1,0 +1,100 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+  background: #239342;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+  background: #1B7634;
+  width: 400px;
+  height: 420px;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+a {
+  color: #0C2852;
+  text-decoration: none;
+}
+
+label, p {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.login span {
+  position: relative;
+  top:50%;
+  -webkit-transition: top .2s ease-in;  
+  -ms-transition: top .2s ease-in;  
+  transition: top .2s ease-in;  
+}
+
+span.wave-up {
+  top: 0%;
+}
+
+.login > * {
+  margin: 1rem 0;
+}
+
+.login * {
+  background: #1B7634;
+}
+
+.text-input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: none;
+  padding: .5rem 0;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.login-submit {
+  background: #FF4141;
+  padding: 1rem 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.login-submit:active {
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  transform: scale(.95);
+}
