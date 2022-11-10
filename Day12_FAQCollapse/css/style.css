@@ -1,0 +1,98 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq li {
+  background: linear-gradient(rgba(41,178,79,0.7), rgba(41,178,79,0.7)), url('../assets/img/text-bubbles.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.4rem;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px gray;
+  color: black;
+  overflow: hidden;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 20px auto;
+}
+
+li > div {
+  margin: 10px;
+}
+
+p {
+  padding: 10px;
+  line-height: 110%;
+}
+
+.show-answer {
+  width: 46px;
+  height: 46px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.show-answer:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  border-radius: 100%; 
+  background: #EB5930;
+  color: white;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+li div > * {
+  margin: 10px;
+}
+
+.answer {
+  display: none;
+}
+
+.show {
+  display: block;
+}
