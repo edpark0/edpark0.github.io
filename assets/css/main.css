@@ -2642,7 +2642,8 @@ input, select, textarea {
 					z-index: 2;
 				}
 
-			.tiles article > a {
+			.tiles article > a,
+			.coming-soon {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2681,7 +2682,8 @@ input, select, textarea {
 					margin: 0;
 				}
 
-				.tiles article > a:hover {
+				.tiles article > a:hover,
+				.coming-soon:hover {
 					color: #ffffff !important;
 				}
 
