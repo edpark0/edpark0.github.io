@@ -1,5 +1,8 @@
 window.addEventListener('keydown', getKeyData);
 
+document.querySelector('#clear-text').addEventListener('click', clearText)
+document.querySelector('#show-input').addEventListener('click', showInput)
+
 //as soon as first key is pressed, this gets executed once and removed
 window.addEventListener('keydown', togglePromptDisplays, {once : true});
 
@@ -19,4 +22,13 @@ function togglePromptDisplays() {
 
     keyPrompt.forEach(element => element.classList.toggle('hide'));
     keyEvents.forEach(element => element.classList.toggle('hide'));
+}
+
+function clearText() {
+    document.querySelector('#text-input').value = "";
+}
+
+function showInput() {
+    document.querySelector('#show-input').classList.add('hide');
+    document.querySelector('#keyboard').classList.remove('hide');
 }
