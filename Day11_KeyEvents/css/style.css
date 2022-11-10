@@ -70,10 +70,17 @@ label {
 }
 
 div {
+  width: 100%;
   border: 2px solid white;
   padding: 20px 30px;
   display: flex;
   flex-flow: column nowrap;
+}
+
+@media (min-width: 304px) {
+  div {
+    width:fit-content;
+  }
 }
 
 div > *,
