@@ -1,0 +1,84 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+  height: 100vh;
+  background: linear-gradient(
+    #f0f0f0 50%,
+    #039b26 50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+nav {
+  background: #f0f0f0;
+  border: 0;
+  padding: 15px 20px;
+  box-shadow: 0 1px 4px 2px #2a2f38;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 17px 17px;
+  width: 100%;
+  max-width: 100px;
+  font-size: 1.4rem;
+  -webkit-transition: all .8s linear;
+  -ms-transition: all .8s linear;
+  transition: all .8s linear;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  color: #039b26;
+  font-size: 2.5rem;
+  cursor: pointer;
+  -webkit-transition: all .8s linear;
+  -ms-transition: all .8s linear;
+  transition: all .8s linear;
+}
+
+/*Ensure menu items are hidden both visually and from screen reader*/
+.hidden {
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  max-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-transform: translateX(300px) rotate3d(0, 1, 0, 1080deg);
+  -ms-transform: translateX(300px) rotate3d(0, 1, 0, 1080deg);
+  transform: translateX(300px) rotate3d(0, 1, 0, 1080deg);
+}
+
+.spinning-toggle {
+  -webkit-transform: rotate(-1080deg);
+  -ms-transform: rotate(-1080deg);
+  transform: rotate(-1080deg);
+}
