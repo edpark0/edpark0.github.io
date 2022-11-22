@@ -7,7 +7,7 @@ textBox.addEventListener('keyup', makeItemList);
 function makeItemList(e) {
     clearTimeouts();
 
-    if(e.code.toLowerCase() === "enter") {
+    if(e.key.toLowerCase() === "enter") {
         if(textBox.value.trim() !== "") {
             randomItemPicker();    
         } else {
