@@ -23,7 +23,7 @@ A site to showcase my take on Brad Traversy's [50 Projects 50 Days](https://gith
 
 ## Lessons Learned
 
-Experimenting with various CSS transitions and animations. Learned about how APIs work. Taking a demo page/feature and not only try to replicate the solution, but also make improvements. 
+Experimenting with various CSS transitions and animations. Learned about how APIs work. Taking a demo page/feature and not only attempt to replicate the solution, but also make improvements. 
 
 ## Author
 
