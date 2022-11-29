@@ -3,7 +3,7 @@
 
 A site to showcase my take on Brad Traversy's [50 Projects 50 Days](https://github.com/bradtraversy/50projects50days/). I attempt to work on each daily project without looking at the original source code, only inspecting and interacting with the live demo page. I also strive to make improvements such as eliminating bugs and improve accessibility.
 
-[My Website to showcase projects](https://edpark0.github.io/)
+[Click here to view my project website!](https://edpark0.github.io/)
 
 ## Tech used
 
