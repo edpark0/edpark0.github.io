@@ -1,30 +1,30 @@
-Phantom by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
+# 50 Days of 50 Projects
 
-This is Phantom, a simple design built around a grid of large, colorful, semi-interactive
-image tiles (of which you can have as many or as few as you like). Makes use of some
-SVG and animation techniques I've been experimenting with on that other project of mine
-you may have heard about (https://carrd.co), and includes a handy generic page for whatever.
+A site to showcase my take on Brad Traversy's 50 Projects 50 Days [Link](https://github.com/bradtraversy/50projects50days/). I attempt to work on each daily project without looking at the original source code, only inspecting and interacting with the live demo page. I also strive to make improvements such as eliminating bugs and improve accessibility.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+[Website](https://edpark0.github.io/)
 
-(* = not included)
+## Tech used
 
-AJ
-aj@lkn.io | @ajlkn
+**Languages:**
 
+![HTML5](https://img.shields.io/static/v1?message=HTML5&logo=html5&labelColor=white&color=097969&logoColor=e34f26&label=%20&style=plastic) 
+![CSS](https://img.shields.io/static/v1?message=CSS3&logo=css3&labelColor=white&color=097969&logoColor=1182c3&label=%20&style=plastic)
+![JavaScript](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=5c5c5c&color=097969&logoColor=f7df1e&label=%20&style=plastic)
 
-Credits:
+**Editor:**
 
-	Demo Images:
-		Unsplash (unsplash.com)
+![JavaScript](https://img.shields.io/static/v1?message=Visual%20Studio%20Code&logo=visualstudiocode&labelColor=white&color=097969&logoColor=3d59a2&label=%20&style=plastic)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+## Screenshots
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+![Site Screenshot](assets/img/site-screenshot1.jpg?raw=true "Optional Title")
+
+## Lessons Learned
+
+Experimenting with various CSS transitions and animations. Learned about how APIs work. Taking a demo page/feature and not only try to replicate the solution, but also make improvements. 
+
+## Author
+
+- [@edpark0](https://github.com/edpark0)
