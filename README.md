@@ -19,7 +19,7 @@ A site to showcase my take on Brad Traversy's [50 Projects 50 Days](https://gith
 
 ## Screenshots
 
-![Site Screenshot](assets/img/site-screenshot1.jpg?raw=true "Optional Title")
+![Site Screenshot](images/site-screenshot1.jpg?raw=true "Optional Title")
 
 ## Lessons Learned
 
