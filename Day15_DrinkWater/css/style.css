@@ -82,6 +82,8 @@ button {
   justify-content: center;
   align-items: center;
   width: 100%;
+  -webkit-transition: flex-basis 0.25s linear;
+  -ms-transition: flex-basis 0.25s linear;
   transition: flex-basis 0.25s linear;
 }
 
